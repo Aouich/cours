@@ -1,0 +1,76 @@
+*{
+    font-family: sans-serif; /* police d'écriture*/
+}
+
+nav{
+    background-color: black;
+    padding: 0 0.5sem;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top: 0; /* position à partir du hait de l'écran */
+    left: 0;/* position à partir de la gauche de l'écran */
+    margin: 0 0 3px;
+}
+
+nav a {/* tous les liens à l'intérieur de la balise nav*/
+    float: left; /*effet flottanr à gauche*/
+    text-decoration: none; /* pas d'héritage avec effet souligné comme c'est strandard pour les liens sous tous les navogateurs */
+    color: #fff; /* couleur du text */
+    line-height: 2.7em;/* interligne*/
+    padding: 0em 2em;/* marhes intéroeur - on les fait dans le sens des aiguilles d'une montre (haut, droit, bas, gauche*/
+    font-size: 1.2em;/* taille du texte*/
+    transition: 2s;/* temps de transation morts du hover(survol de la spuris): ici 2secondes*/
+
+}
+
+nav a:hover{/* tous les liens au survol de la souris dans la nav*/
+    background-color: #fda500;/**/
+    color:black;
+}
+/* 1er container */
+.container{
+    width: 70%;
+    margin: 4% auto 2% auto;
+    background-color: #f1fcde;
+    padding: 2em;
+
+
+}
+
+mark{
+    background-color: #b5a7cf;
+}
+
+/* 2ème container */
+
+.container1{
+    width: 70%;
+    margin: 2% auto;/* 2% auto 2% auto*/
+    background-color: #f0e9fd;
+    padding: 2%;
+}
+
+/* container 3 et 4 imbriqués dans le container1*/
+.container2, .container3{
+    width: 44.5%;
+    background-color: #f1fcde;
+    padding: 2%;
+    float:left;
+}
+
+.container2{
+    margin-right: 1.5%;
+}
+
+.container3{
+    margin-left: 1.5%;
+}
+
+/* 5éme container */
+.container4{
+    margin-top: 2em;
+}
+.clear{
+    clear: both;
+}

@@ -1,0 +1,35 @@
+body{
+    width: 80%;
+    margin: 10px auto;
+
+}
+
+#conteneur{
+    background-color: red;
+    border: 2px solid #000;
+
+}
+
+header,footer{
+    height: 80px;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding-top: 6px; /*marge interieure*/
+}
+
+nav{
+    height: 40px;
+    background-color:violet;
+    color: white;
+    padding-left: 20px; /*marge interieure*/
+}
+
+section{
+    
+    border: 20px;
+    background-color:wheat;
+    height: 500px;
+    text-align: center;      
+}
+

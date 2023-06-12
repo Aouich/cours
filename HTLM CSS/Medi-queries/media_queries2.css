@@ -1,0 +1,142 @@
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+div{
+    margin: 0;
+}
+
+header{
+    background-color: #8E3557;
+}
+
+nav{
+    background-color: #4a1a2C;
+    height: 50px;
+    padding-left: 2em;
+    line-height: 45px;/* on peut remplacer line-height par margin(top et bottom) */
+}
+
+    
+nav a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 2em;
+    border-right: 1px solid #fff;
+    padding-right: 2em;
+}
+
+footer{
+    background-color: palevioletred;
+    height: 100px;
+}
+
+nav a:last-child{
+    /*il va selectionner le dernier enfant qui se trouve à l'interieure de nav*/
+    border-right: none;
+}
+
+section{
+    /* on applique display:flec sur le parent */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+section div{
+    /* selectionne toutes le div qui se trouvent à l'intérieur de section */
+    width: 32vh;/* l'equivalent de 46% de largeur*/
+    height: 50vh;
+}
+
+.zone1, .zone4{
+    background:linear-gradient(to left,#40a497, #6840a4);
+}
+
+.zone2, .zone3{
+    background-color: #73adce;
+}
+main{
+    border:1px solid black;
+}
+
+.zone3,.zone4{
+    margin-top: 15px;
+}
+/* appel des medias queries */
+
+@media screem and(max-width:768px){
+    /* 'jannonce que la taille de l'écran est changée */
+    .container{
+        width: 90%;
+    }
+
+header{
+    background-color: #568e35;
+}
+section div{
+    width: 80vh;
+
+}
+section{
+    flex-direction: colum;
+    align-items: center;
+}
+
+nav a{
+    display: block;
+    font-size: 16px;
+    border: none;
+
+}
+nav{
+    height: 150px;
+    line-height: 30px;
+}
+
+.zone2{
+    margin-top: 15px;
+    background-color: orange;
+}
+
+footer{
+    background-color: #568e35;
+}
+/* la fin de la fourchette tablette max-width: 786px */
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    /* le début de nouvel interval pourles tailles au delà de 992 px  */
+    /* ici on ajoute ke css reajuster l'affichage pour les écrans supèrieur à 992px */
+    .container{
+        width: 90%;
+    }
+    section{
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    header{
+        background-color: #d46d19;
+    }
+
+    footer{
+        background-color: #d46d19;
+    }
+    
+    section div{
+        width: 41vh;
+    }
+    .zone2, .zone3{
+        background-color: #f479d8;
+    }
+    .zone1, .zone4{
+        background-image: url(../img/image2.jpg);
+        background-size: cover; /* avec cover l'image couvre l;a totalité du bloc (même si l'inmag est plus grande*/;
+    }
+
+}/**/

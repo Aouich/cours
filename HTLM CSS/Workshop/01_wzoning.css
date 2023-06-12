@@ -1,0 +1,33 @@
+#conteneur{
+    width: 960px;
+    background-color: paleturquoise;
+    color: white;
+    margin: 0 auto;
+
+}
+header{
+    background-color: red;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+   
+}
+
+section{
+    
+    
+
+
+
+.gauche{
+   width: 80px;
+   background-color: blue;
+   float: left;
+   
+  
+   
+   
+}
+.milieu_5{
+    
+}

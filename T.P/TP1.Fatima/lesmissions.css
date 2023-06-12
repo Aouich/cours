@@ -1,0 +1,32 @@
+
+body{
+    text-align: center;/*alignement du texte*/
+    background:white ;/* couleur du fond contenu */
+    margin: 10% 10% auto;/*marge*/
+    
+}
+
+.container{
+    background: #29347B;/* couleur du fond contenu */
+    border: 400px;/*bordure autour de la page*/
+    color: white; /*couleur texte*/
+    margin: 10%;/*marge interieur*/
+    align-items: center;
+    font-size: 40px;/*police*/
+       
+}
+
+
+figure{
+    display: inline-block; /*positionnement des blocks*/
+
+}
+
+img{
+    width: 200px; 
+}
+
+
+
+
+   

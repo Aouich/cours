@@ -1,0 +1,103 @@
+body{
+    margin: 10px ;
+    padding: 0;
+    text-align: center;
+    font-family: 'PT sans' ,sans-serif;
+    background-color: #DDEEAA;
+}
+
+#conteneur{
+    width: 770px;/*largeur*/
+    margin: 0 auto;/*marge automatique qui centre le bloc apres lavoir monter le plus haut possible dans mon affichage*/
+    text-align: left;
+    border: 2px solid #AABB44;/*bordure autour de toute la page*/
+    background: #fff;/* couleur du fond de mon conteneur*/
+}
+
+h1{
+    height: 258px;/*personnaliser la hauteur de mon titre*/
+    background: url(pomme.png) no-repeat left top;
+    margin: 0;
+
+}
+
+h1 a{
+    /* on donne les mêmes dimensions au lien, chose possibme grâce à la propriété display: block; qui transforme le lien en élément de type block, auquel on peut donner des propriétes de taille. on met aussi l'image de fond qui a les mêmes dimension que le cadre ainsi crée */
+
+    width: 400px;
+    height: 70px;
+    display: block;
+    background: url(colored\ design\ horiz.png) no-repeat;
+    position: relative;
+    left: 350px;
+    top: 15px;
+    text-indent: -1500px;/*le texte-indent négatif est fait pour pouvoir cacher le texte hors de la page, ce que nous voulons*/
+}
+
+ul{
+    height: 35px;/* on donne une hauteur au menu, correspondant à la taille de l'image utilisée en fond*/
+    margin: 0;
+    padding: 0;
+    background: url(menu.png) repeat-x 0 -25px;
+    list-style-type: none;/* on cache les puces*/  
+
+}
+
+ul li{
+    float: left;/* on rend les li en flottant pour pouvoir les afficher horizontalement*/
+    text-align: center; /*on centre le texte*/
+}
+
+ul li a{
+    display: block;/*nous pouvons dimensioner les a grâce à la propriété display:block;*/
+    width: 130px;/*largeur*/
+    line-height: 25px;/* hauteur de ligne*/
+    font-size: 1.2em;/*taille de police*/
+    font-weight: bold;/*lise en accentuation gras/bold de la police*/
+    letter-spacing: 2px;/*espacement de lettres*/
+    text-decoration: none;
+    border-right: 2px solid #dea;/*bordure à droite*/
+}
+
+ul li:hover{
+    background: url(menu.png) repeat-x 0 0 ;/*l'image d'arrière plan est répétée uniquement horizontalement*/
+}
+
+main{
+    padding: 0 30px 0 100px;
+    background-image: url(colored\ design\ vertical.png);
+    background-repeat: no-repeat;
+    background-position: 15px 15px;/*crée un espace à gauche et à droit de l'image*/
+
+}
+
+main h2{/* mise en forme du titre de page <h2> */
+    padding-left: 25px; /*on décale les texte en fonction de l'image*/
+    line-height: 25px;/*on décale le texte en fonction de l'image avce un interligne*/
+    font-size: 1.4sem;/*on précise une taille de police*/
+    background: url(petit\ pomme.png) no-repeat left bottom;
+    color: #9b2;
+    border-bottom: 1px solid #9b2;
+}
+
+main h3{
+    margin-left: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid #9b2;
+    border-left: 2px solid #9b2;
+    color: #9b2;
+}
+
+main p{/*paragraphe plus propre*/
+    text-align: justify;
+    text-indent: 2em;/*indentation supérieure à l'état normal pour aérer tous*/
+    line-height: 1.7em;/*espacement entre les lignes pour aérer*/
+}
+
+footer{ /*bas ou pied de la page*/
+    margin: 0;
+    padding-right: 10px;
+    line-height: 30px;
+    text-align: right;
+    color: #8a0;
+}
