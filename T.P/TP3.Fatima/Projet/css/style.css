@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Cormorant+Garamond:wght@300&family=Crimson+Text:ital,wght@1,700&family=Roboto:ital,wght@1,100&display=swap');
+
+body{ /*le corps*/
+    background: #ffff;
+    padding: 0.9px ;
+    margin: 0.9px; /*marge*/
+
+}
+
+#container{
+    background-image: url(../img/woddPlank.jpg);/*image header*/    position: static;
+    padding: 30%;
+    height: 0;
+}
+
+h1{
+    text-transform: uppercase;/*majuscule*/
+    text-align: left;/*alignement texte*/
+    padding: 50%;
+    margin: auto;
+    
+}
+h1 span{
+    /*header*/
+    font-size: 40px;/*taille police*/
+    display: inline;
+    vertical-align: top;
+    position: relative;
+}
+
+h1 span:after {
+    /*header*/
+    top: 15px;
+    content: "-";
+    position: absolute;
+    left: 0;
+}
+
+.hr1{ /*trait*/
+    /* width: 40px;
+    height: 8px; */
+    background-color: red;/*couileur*/
+    border: red;/*bordure exterieur*/
+    display: inline;
+    align-items:left ; /* alignement objet*/
+    margin: 0px ;
+    position: absolute;
+    
+}
+
+.cerf{
+    width: 250px;
+    align-items: center;
+    margin: 700px ;  
+    padding: 10px ;  
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+#container .fond .fondheader{
+    display: inline;
+    margin: 2px;
+    height: auto;
+      
+}
+nav{
+    display: inline-block;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;   
+}
+
+nav ul li{
+    list-style: none;/*retier les puces*/
+    margin: auto 2em;
+    display: inline;  
+}
+
+nav ul li a {
+    font-size: 1.2em;
+    line-height: 50px;
+    font-family: 'Caveat Brush';/*écriture*/
+    text-transform: uppercase;
+    text-decoration: none;/*retier le soulignement*/
+    color: black;
+    
+}
+
+a{
+    text-align: left;
+}
+
+section{
+    display: inline-block;
+    
+
+}
+
+.ligne{
+    background-color: black;
+    width: 50px;
+    height: 8px;
+    background-color: red;
+    border: red;
+    margin: 30px;
+}
+section p{
+    text-transform: uppercase;
+    display: inline;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

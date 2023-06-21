@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- permet de définir le langage utilisé et la langue -->
+<html lang="fr">
+<!-- Permet d'indiquer la langue de la page -->
+
+<head> <!--Tête de la page non visible sur le site-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma page structure</title>
+    <!-- TItre du site apparaisson par exemple sur une recherche google, sur l'onglet ...-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- reliez le fichier html au fichier CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald" rel="stylesheet">
+    <!--Lien pour les polices utilisé via "Google-Font"-->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- Line pour le "Font-awesome" (icones) ici en local mais d'habitude sur le site CDNJS -->
+    <meta name="description" content="Ma première page en HTLM/CSS">
+    <!-- Déscription sous le titre dans la recheche google -->
+
+</head>
+
+<body><!-- Corps du document-->
+    <header><!--zone du haut, ex: logo slogan, bannière...-->
+        <div id="logo">
+            <a href="#logo">
+                <button type="button">
+                    <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+                </button>
+            </a>
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <di id="slogan">
+            <h1>Mon premier site HTML/CSS</h1>
+        </di>
+        <div id="social">
+            <a href="https://www.instagram" target="_blank"> <!--target pour ouvrir sur une page-->
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="clear"></div> <!-- Arrêter l'effet flotant -->
+    </header>
+
+    <nav> <!--Zone du menu, les liens pour naviger sur le site-->
+        <div class="ancreNav">
+            <a href="index.html" >Structure</a>
+            <a href="texte.html" >Texte</a>
+            <a href="selecteurs.html">Selecteurs</a>
+            <a href="image.html"class="active">Image</a>
+            <a href="position.html">Position</a>
+            <a href="zoning.html">Zoning</a>
+            <a href="tableau.html">Tableau</a>
+            <a href="liste.html">Liste</a>
+            <a href="lien_menu.html">Lien</a>
+            <a href="formulaire.html">Formulaire</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="animation.html">Animation</a>
+        </div>
+    </nav>
+    <main>
+        <!--  main>h2{image}+section.imageFond>h3{Image de fond en CSS}+p>lorem50 -->
+        <h2>Image</h2>
+        <section class="imageFond">
+            <h3>Image de fond en CSS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsam dolor, cupiditate laborum sit officiis repellat ipsum architecto? Excepturi, repellendus delectus modi architecto, ipsa vel amet esse numquam quaerat corporis optio fugit, sed quas autem neque magnam ex? Nisi, suscipit non ipsa ab doloribus necessitatibus dolores ut qui mollitia minima.</p>
+        </section>
+
+        <section>
+            <h3>Image dans HTML</h3>
+                <figure>
+                    <img src="./img/toureiffel.jpg" title="Cette photo montre la tour Eiffel de Paris" alt="cette photo montre la tour eiffel de Paris">
+                    <figcaption>Une photo de la Tour Eiffel</figcaption>
+            </figure>
+        </section>
+
+        <section class="rotationImg"> <!--section.rotationImg>h3{Image en HTML/CSS}-->
+            <h3>Image en HTML/CSS</h3>
+                <img src="./img/logo.png"
+                    class="image" alt="">
+                <img src="./img/logo.png" 
+                    class="image"alt="">
+                <img src="./img/logo.png" 
+                    class="rotation360 image" alt="">
+        </section>
+    </main>
+    <footer>
+        <!--Zone de bas , ex: liens administratifs, mentions légales, plan du site, contenu-->
+        <small>
+            &copy; 2023 poisy
+        </small>
+    
+    </footer>
+    </body>
+    
+    </html>
